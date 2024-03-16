@@ -1,99 +1,110 @@
-*
-{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color:black;
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
 }
-h1{
-    background-color:black;
-    height:80px;
-    color:rgb(75, 255, 75);
-    text-align:center;
-    padding-top:35px;
-    font-size:40px;
+
+.heading {
+    background-color: black;
+    height: 80px;
+    color: rgb(75, 255, 75);
+    text-align: center;
+    padding-top: 35px;
+    font-size: 40px;
 }
-.images
-{
-    text-align:center;
-    margin-top:35px ;
-    display:flex;
-    justify-content:center;
+
+.images {
+    text-align: center;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
 }
-.image:hover{
-    cursor:pointer;
-    opacity:0.8;
+
+.image {
+    margin: 0 10px;
 }
-img{
-    height:240px;
+
+.image:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
-.score-board
-{
-    display:flex;
-    font-size:35px;
-    color:rgb(252, 252, 76);
-    gap:80px;
-    margin-top:40px;
-    text-align:center;
-    justify-content:center;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-.mssg-container
-{
-    text-align:center;
-    margin-top:6%;
+
+.score-board {
+    display: flex;
+    font-size: 35px;
+    color: rgb(252, 252, 76);
+    gap: 80px;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
 }
-.mssg
-{
-    background-color:rgb(5, 14, 18);
-    font-size:25px;
-    display:inline;
-    padding:15px;
-    color:white;
-    border-radius:1rem;
+
+.mssg-container {
+    text-align: center;
+    margin-top: 6%;
 }
-#user-score
-{
-    color:rgb(233, 214, 249);
+
+.mssg {
+    background-color: rgb(5, 14, 18);
+    font-size: 25px;
+    display: inline;
+    padding: 15px;
+    color: white;
+    border-radius: 1rem;
 }
-#comp-score
-{
-    color:rgb(233, 214, 249);
+
+#user-score,
+#comp-score {
+    color: rgb(233, 214, 249);
 }
-@media(max-width:768px)
-{
-    h1
-    {
-        font-size:25px;
-      margin-left:25px;
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
-    .images{
-        margin-top:50px;  
+
+    .images {
+        flex-wrap: wrap;
     }
-    #rock
-    {
-    margin-left:60px;
-    padding-left:10px;
+
+    .image {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-bottom: 20px;
     }
-    #scissor
-    {
-        margin-right:40px;
-        padding-right:30px;
+
+    img {
+        height: auto;
     }
-    img
-    {
-        height:180px;
+
+    .score-board {
+        flex-wrap: wrap;
+        margin-top: 60px;
     }
-    .score-board
-    {
-        margin-top:60px;
+
+    .user {
+        flex: 0 0 50%;
+        text-align: center;
     }
-    .mssg-container
-    {
-        margin-top:15%;
+
+    .mssg-container {
+        margin-top:20%;
     }
-    .mssg{
-        font-size:15px;
-        padding:20px;
+
+    .mssg {
+        font-size:18px;
+        padding: 20px;
     }
 }
