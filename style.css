@@ -68,7 +68,8 @@ img {
     color: rgb(233, 214, 249);
 }
 
-@media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 768px) {
     .heading {
         font-size: 25px;
         margin-left: 25px;
@@ -89,20 +90,14 @@ img {
         height: auto;
     }
 
-    .score-board {
-        flex-wrap: wrap;
-        margin-top: 60px;
-    }
-
-    .user {
-        flex: 0 0 50%;
-        text-align: center;
-    }
-
     .mssg-container {
-        margin-top:20%;
+        margin-top:15%;
     }
 
+    .user
+    {
+        font-size:30px;
+    }
     .mssg {
         font-size:18px;
         padding: 20px;
