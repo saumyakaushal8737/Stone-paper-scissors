@@ -64,13 +64,24 @@ img{
 {
     h1
     {
-        font-size:30px;
+        font-size:25px;
       margin-left:25px;
     }
     .images{
-        margin-top:50px;
+        margin-top:50px;  
     }
-    img{
+    #rock
+    {
+    margin-left:60px;
+    padding-left:10px;
+    }
+    #scissor
+    {
+        margin-right:40px;
+        padding-right:30px;
+    }
+    img
+    {
         height:180px;
     }
     .score-board
@@ -80,5 +91,9 @@ img{
     .mssg-container
     {
         margin-top:15%;
+    }
+    .mssg{
+        font-size:15px;
+        padding:20px;
     }
 }
